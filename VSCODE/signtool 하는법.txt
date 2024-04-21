@@ -1,0 +1,14 @@
+signtool sign /fd SHA256 vscode_uninstall.exe
+signtool timestamp /tr http://timestamp.digicert.com /td SHA256 vscode_uninstall.exe
+signtool verify /pa vscode_uninstall.exe
+
+
+
+
+
+
+
+------------------------------
+signtool sign /a /t http://timestamp.digicert.com vscode_uninstall.exe
+
+
